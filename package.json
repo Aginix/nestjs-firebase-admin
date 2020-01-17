@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aginix/firebase-admin.git"
+    "url": "https://github.com/aginix/nestjs-firebase-admin.git"
   },
   "scripts": {
     "test": "jest --passWithNoTests",
