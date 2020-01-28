@@ -453,10 +453,10 @@
     tslib "1.10.0"
     uuid "3.4.0"
 
-"@nestjs/testing@6.11.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.11.0.tgz#b523fed84fe0def098662895818705761c8444c6"
-  integrity sha512-NwvLtm4aMwdrGPUWKvHbnII5F3CTeJ0BL1Fd2tfUg0D8xqYQdG4R+T/SCeB4FMe2STRLydcE1rrOGxek6N4Hxw==
+"@nestjs/testing@6.11.4":
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.11.4.tgz#4442c13416a75c2612505b7727a983afb8ba5751"
+  integrity sha512-RxjRmA/73YE5DJMtoKT4o2xKLRnq2diO2ICdDa/ubODAJsGhTk1BZ0JTyfbSbZmtrmzUChOZ5Qtj+Y9Li7Dz1Q==
   dependencies:
     optional "0.1.4"
     tslib "1.10.0"
@@ -5291,11 +5291,6 @@ util.promisify@^1.0.0:
   dependencies:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
-
-uuid@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
-  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 uuid@3.4.0, uuid@^3.3.2:
   version "3.4.0"
