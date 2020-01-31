@@ -1,5 +1,5 @@
 {
-  "name": "@aginix/firebase-admin",
+  "name": "@aginix/nestjs-firebase-admin",
   "version": "1.0.2",
   "description": "Firebase Admin module for Nest framework (node.js)",
   "author": {
