@@ -431,9 +431,9 @@
     "@types/yargs" "^13.0.0"
 
 "@nestjs/common@^6.0.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.0.tgz#5af56c4df3aeee697d398cfbc2fd175e7fa7e736"
-  integrity sha512-f+bHCFmpeSJJo3muyRyMYwCXMJuqjJvM86WrBsXfEd5ErDoicy1u7L8kzQfCSwTvUngh3taT51wYQC6RFzAWVA==
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.4.tgz#feae83b3fe0a2f9d77ceefe59341e79854995fc4"
+  integrity sha512-NOtDTUcCSoJAYN+4gvROkMkcDTdRQ+z39ngQQKYNMeXx2SOmTKXG6TaRVbiNN8Q1drri3ooqwG70PWiz/EQbPQ==
   dependencies:
     axios "0.19.2"
     cli-color "2.0.0"
@@ -5291,11 +5291,6 @@ util.promisify@^1.0.0:
   dependencies:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
-
-uuid@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
-  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 uuid@3.4.0, uuid@^3.3.2:
   version "3.4.0"
