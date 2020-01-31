@@ -33,11 +33,11 @@
     "firebase-admin": "^8.9.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.10.14",
-    "@types/jest": "24.0.25",
+    "@types/jest": "24.9.1",
+    "@nestjs/testing": "6.11.4",
     "@types/node": "11.13.21",
     "dotenv": "^8.1.0",
-    "husky": "4.0.0",
+    "husky": "4.2.1",
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
@@ -46,7 +46,7 @@
     "supertest": "4.0.2",
     "ts-jest": "24.3.0",
     "tslint": "5.20.1",
-    "typescript": "3.7.4"
+    "typescript": "3.7.5"
   },
   "lint-staged": {
     "*.ts": [
