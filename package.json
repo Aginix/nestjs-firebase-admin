@@ -33,9 +33,8 @@
     "firebase-admin": "^8.9.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.10.14",
-    "@nestjs/testing": "6.11.0",
     "@types/jest": "24.9.1",
+    "@nestjs/testing": "6.11.4",
     "@types/node": "11.13.21",
     "dotenv": "^8.1.0",
     "husky": "4.2.1",

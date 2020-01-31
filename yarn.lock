@@ -431,9 +431,9 @@
     "@types/yargs" "^13.0.0"
 
 "@nestjs/common@^6.0.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.0.tgz#5af56c4df3aeee697d398cfbc2fd175e7fa7e736"
-  integrity sha512-f+bHCFmpeSJJo3muyRyMYwCXMJuqjJvM86WrBsXfEd5ErDoicy1u7L8kzQfCSwTvUngh3taT51wYQC6RFzAWVA==
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.4.tgz#feae83b3fe0a2f9d77ceefe59341e79854995fc4"
+  integrity sha512-NOtDTUcCSoJAYN+4gvROkMkcDTdRQ+z39ngQQKYNMeXx2SOmTKXG6TaRVbiNN8Q1drri3ooqwG70PWiz/EQbPQ==
   dependencies:
     axios "0.19.2"
     cli-color "2.0.0"
@@ -441,9 +441,9 @@
     uuid "3.4.0"
 
 "@nestjs/core@^6.0.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.11.0.tgz#f4cc2fbcb859726920d10266fac27aeb6ad84347"
-  integrity sha512-2S4HNEdAFPQJIrG7nclMy2OREhZqQIzd2kwhrPDC2mEcfuibEZCiGAyH4hbfaf1lFf0D9+wdu5PHsY/aDHF6Zg==
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.11.4.tgz#91620b19f22f2cec32efc77861bab11efa3422c3"
+  integrity sha512-l/2dlVLV9MTjtcza7Lk6iqfp5MR+BGt0yGc1wLWKbjibEckgtngQmbGSSbtXMjK/3lTvIX3VYle2k/2DV1vkfg==
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
     fast-safe-stringify "2.0.7"
@@ -453,10 +453,10 @@
     tslib "1.10.0"
     uuid "3.4.0"
 
-"@nestjs/testing@6.11.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.11.0.tgz#b523fed84fe0def098662895818705761c8444c6"
-  integrity sha512-NwvLtm4aMwdrGPUWKvHbnII5F3CTeJ0BL1Fd2tfUg0D8xqYQdG4R+T/SCeB4FMe2STRLydcE1rrOGxek6N4Hxw==
+"@nestjs/testing@6.11.4":
+  version "6.11.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.11.4.tgz#4442c13416a75c2612505b7727a983afb8ba5751"
+  integrity sha512-RxjRmA/73YE5DJMtoKT4o2xKLRnq2diO2ICdDa/ubODAJsGhTk1BZ0JTyfbSbZmtrmzUChOZ5Qtj+Y9Li7Dz1Q==
   dependencies:
     optional "0.1.4"
     tslib "1.10.0"
@@ -4519,9 +4519,9 @@ rimraf@^2.5.4, rimraf@^2.6.3:
     glob "^7.1.3"
 
 rimraf@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.0.tgz#614176d4b3010b75e5c390eb0ee96f6dc0cebb9b"
-  integrity sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.1.tgz#48d3d4cb46c80d388ab26cd61b1b466ae9ae225a"
+  integrity sha512-IQ4ikL8SjBiEDZfk+DFVwqRK8md24RWMEJkdSlgNLkyyAImcjf8SWvU1qFMDOb4igBClbTQ/ugPqXcRwdFTxZw==
   dependencies:
     glob "^7.1.3"
 
@@ -5291,11 +5291,6 @@ util.promisify@^1.0.0:
   dependencies:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
-
-uuid@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
-  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 uuid@3.4.0, uuid@^3.3.2:
   version "3.4.0"
