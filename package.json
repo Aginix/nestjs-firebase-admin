@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/jest": "25.2.1",
     "@nestjs/testing": "7.0.9",
-    "@types/node": "11.13.21",
+    "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
     "husky": "4.2.5",
     "jest": "24.9.0",
