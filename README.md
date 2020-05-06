@@ -12,7 +12,7 @@ $ yarn add @aginix/nestjs-firebase-admin
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { FirebaseAdminModule } from '@aginix/firebase-admin'
+import { FirebaseAdminModule } from '@aginix/nestjs-firebase-admin'
 import * as admin from 'firebase-admin'
 
 @Module({
@@ -33,7 +33,7 @@ export class AppModule {}
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { FirebaseAuthenticationService } from '@aginix/firebase-admin';
+import { FirebaseAuthenticationService } from '@aginix/nestjs-firebase-admin';
 
 @Injectable()
 export class AppService {
