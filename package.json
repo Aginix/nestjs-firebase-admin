@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LynX39/nestjs-firebase-admin.git"
+    "url": "https://github.com/Aginix/nestjs-firebase-admin.git"
   },
   "scripts": {
     "test": "jest --passWithNoTests",
@@ -41,7 +41,7 @@
     "@nestjs/testing": "7.0.9",
     "@types/node": "11.13.21",
     "dotenv": "^8.1.0",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
