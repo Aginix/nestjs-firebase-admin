@@ -1,7 +1,7 @@
 {
   "name": "@aginix/nestjs-firebase-admin",
-  "version": "1.0.3",
-  "description": "Firebase Admin module for Nest framework (node.js)",
+  "version": "1.0.4",
+  "description": "Firebase Admin module for Nest framework",
   "authors": [{
     "name": "Nonpawit Teerachetmongkol",
     "email": "nonpawit.tee@aginix.tech"
