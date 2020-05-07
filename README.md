@@ -48,3 +48,7 @@ export class AppService {
   }
 }
 ```
+
+## License
+
+MIT © [Aginix Technologies Co., Ltd.](https://github.com/Aginix/nestjs-firebase-admin)
