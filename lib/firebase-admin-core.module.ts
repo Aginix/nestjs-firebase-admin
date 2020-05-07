@@ -2,12 +2,14 @@ import { Global, Module, DynamicModule, Provider } from '@nestjs/common';
 import * as admin from 'firebase-admin';
 import { FirebaseAdminModuleAsyncOptions, FirebaseAdminModuleOptions } from './firebase-admin.interface';
 import { FIREBASE_ADMIN_MODULE_OPTIONS } from './firebase-admin.constant';
-import { FirebaseAuthenticationService } from './firebase-admin-authentication.service';
-import { FirebaseMessagingService } from './firebase-admin-messaging.service';
-import { FirebaseRemoteConfigService } from './firebase-admin-remote-config.service';
-import { FirebaseDatabaseService } from './firebase-admin-database.service';
-import { FirebaseFirestoreService } from './firebase-admin-firestore.service';
-import { FirebaseStorageService } from './firebase-admin-storage.service';
+import {
+  FirebaseAuthenticationService,
+  FirebaseMessagingService,
+  FirebaseRemoteConfigService,
+  FirebaseDatabaseService,
+  FirebaseFirestoreService,
+  FirebaseStorageService,
+} from './services';
 
 const PROVIDERS = [
   FirebaseAuthenticationService,
