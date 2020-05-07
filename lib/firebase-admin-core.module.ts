@@ -1,11 +1,22 @@
-import { Global, Module, DynamicModule } from '@nestjs/common';
+import { Global, Module, DynamicModule, Provider } from '@nestjs/common';
 import * as admin from 'firebase-admin';
 import { FirebaseAdminModuleAsyncOptions, FirebaseAdminModuleOptions } from './firebase-admin.interface';
 import { FIREBASE_ADMIN_MODULE_OPTIONS } from './firebase-admin.constant';
 import { FirebaseAuthenticationService } from './firebase-admin-authentication.service';
 import { FirebaseMessagingService } from './firebase-admin-messaging.service';
+import { FirebaseRemoteConfigService } from './firebase-admin-remote-config.service';
+import { FirebaseDatabaseService } from './firebase-admin-database.service';
+import { FirebaseFirestoreService } from './firebase-admin-firestore.service';
+import { FirebaseStorageService } from './firebase-admin-storage.service';
 
-const PROVIDERS = [FirebaseAuthenticationService, FirebaseMessagingService];
+const PROVIDERS = [
+  FirebaseAuthenticationService,
+  FirebaseMessagingService,
+  FirebaseRemoteConfigService,
+  FirebaseDatabaseService,
+  FirebaseFirestoreService,
+  FirebaseStorageService,
+];
 const EXPORTS = [...PROVIDERS];
 
 @Global()
@@ -19,21 +30,20 @@ export class FirebaseAdminCoreModule {
 
     const app = admin.apps.length === 0 ? admin.initializeApp(options) : admin.apps[0];
 
-    const firebaseAuthencationProvider = {
-      provide: FirebaseAuthenticationService,
-      useFactory: () => new FirebaseAuthenticationService(app),
-    };
-
-    const firebaseMessagingProvider = {
-      provide: FirebaseMessagingService,
-      useFactory: () => new FirebaseMessagingService(app),
-    };
+    const providers = this.createProviders(app);
 
     return {
       module: FirebaseAdminCoreModule,
-      providers: [firebaseAdminModuleOptions, firebaseAuthencationProvider, firebaseMessagingProvider],
+      providers: [firebaseAdminModuleOptions, ...providers],
       exports: [...EXPORTS],
     };
+  }
+
+  private static createProviders(app: admin.app.App): Provider<any>[] {
+    return PROVIDERS.map<Provider>((ProviderService) => ({
+      provide: ProviderService,
+      useFactory: () => new ProviderService(app),
+    }));
   }
 
   static forRootAsync(options: FirebaseAdminModuleAsyncOptions): DynamicModule {
@@ -43,29 +53,24 @@ export class FirebaseAdminCoreModule {
       inject: options.inject || [],
     };
 
-    const firebaseAuthencationProvider = {
-      provide: FirebaseAuthenticationService,
-      useFactory: (options: FirebaseAdminModuleOptions) => {
-        const app = admin.apps.length === 0 ? admin.initializeApp(options) : admin.apps[0];
-        return new FirebaseAuthenticationService(app);
-      },
-      inject: [FIREBASE_ADMIN_MODULE_OPTIONS],
-    };
-
-    const firebaseMessagingProvider = {
-      provide: FirebaseMessagingService,
-      useFactory: (options: FirebaseAdminModuleOptions) => {
-        const app = admin.apps.length === 0 ? admin.initializeApp(options) : admin.apps[0];
-        return new FirebaseMessagingService(app);
-      },
-      inject: [FIREBASE_ADMIN_MODULE_OPTIONS],
-    };
+    const providers = this.createAsyncProviders();
 
     return {
       module: FirebaseAdminCoreModule,
       imports: options.imports,
-      providers: [firebaseAdminModuleOptions, firebaseAuthencationProvider, firebaseMessagingProvider],
+      providers: [firebaseAdminModuleOptions, ...providers],
       exports: [...EXPORTS],
     };
+  }
+
+  private static createAsyncProviders(): Provider<any>[] {
+    return PROVIDERS.map<Provider>((ProviderService) => ({
+      provide: ProviderService,
+      useFactory: (options: FirebaseAdminModuleOptions) => {
+        const app = admin.apps.length === 0 ? admin.initializeApp(options) : admin.apps[0];
+        return new ProviderService(app);
+      },
+      inject: [FIREBASE_ADMIN_MODULE_OPTIONS],
+    }));
   }
 }
