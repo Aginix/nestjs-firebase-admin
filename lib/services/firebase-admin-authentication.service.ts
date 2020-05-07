@@ -7,9 +7,9 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
 
   get auth() {
     if (!this.app) {
-      throw new Error('Firebase instance is undefined.')
+      throw new Error('Firebase instance is undefined.');
     }
-    return this.app.auth()
+    return this.app.auth();
   }
 
   tenantManager(): admin.auth.TenantManager {
@@ -48,7 +48,10 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
   revokeRefreshTokens(uid: string): Promise<void> {
     return this.auth.revokeRefreshTokens(uid);
   }
-  importUsers(users: admin.auth.UserImportRecord[], options?: admin.auth.UserImportOptions): Promise<admin.auth.UserImportResult> {
+  importUsers(
+    users: admin.auth.UserImportRecord[],
+    options?: admin.auth.UserImportOptions,
+  ): Promise<admin.auth.UserImportResult> {
     return this.auth.importUsers(users, options);
   }
   createSessionCookie(idToken: string, sessionCookieOptions: admin.auth.SessionCookieOptions): Promise<string> {
@@ -75,7 +78,10 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
   deleteProviderConfig(providerId: string): Promise<void> {
     return this.auth.deleteProviderConfig(providerId);
   }
-  updateProviderConfig(providerId: string, updatedConfig: admin.auth.UpdateAuthProviderRequest): Promise<admin.auth.AuthProviderConfig> {
+  updateProviderConfig(
+    providerId: string,
+    updatedConfig: admin.auth.UpdateAuthProviderRequest,
+  ): Promise<admin.auth.AuthProviderConfig> {
     return this.auth.updateProviderConfig(providerId, updatedConfig);
   }
   createProviderConfig(config: admin.auth.AuthProviderConfig): Promise<admin.auth.AuthProviderConfig> {
