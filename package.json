@@ -1,7 +1,7 @@
 {
   "name": "@aginix/nestjs-firebase-admin",
-  "version": "1.0.3",
-  "description": "Firebase Admin module for Nest framework (node.js)",
+  "version": "1.0.5",
+  "description": "Firebase Admin module for Nest framework",
   "authors": [{
     "name": "Nonpawit Teerachetmongkol",
     "email": "nonpawit.tee@aginix.tech"
@@ -14,10 +14,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LynX39/nestjs-firebase-admin.git"
+    "url": "https://github.com/Aginix/nestjs-firebase-admin.git"
   },
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest --config jest.json",
+    "test:dev": "jest --config jest.json --watch",
     "precommit": "lint-staged",
     "prettier": "prettier src/**/*.ts --write && git status",
     "build": "rimraf dist && npm run build:lib && npm test",
@@ -37,20 +38,20 @@
     "firebase-admin": "^8.11.0"
   },
   "devDependencies": {
-    "@types/jest": "25.1.4",
+    "@types/jest": "25.2.1",
     "@nestjs/testing": "7.0.9",
-    "@types/node": "11.13.21",
+    "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "jest": "24.9.0",
-    "lint-staged": "9.5.0",
-    "prettier": "1.19.1",
+    "lint-staged": "10.2.2",
+    "prettier": "2.0.5",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "supertest": "4.0.2",
     "ts-jest": "24.3.0",
-    "tslint": "5.20.1",
-    "typescript": "3.7.5"
+    "tslint": "6.1.2",
+    "typescript": "3.8.3"
   },
   "lint-staged": {
     "*.ts": [
