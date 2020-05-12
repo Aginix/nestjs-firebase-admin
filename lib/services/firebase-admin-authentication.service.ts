@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import * as admin from 'firebase-admin';
+import * as lib from 'firebase-admin/lib/auth';
 
 @Injectable()
 export class FirebaseAuthenticationService implements admin.auth.Auth {
@@ -24,6 +25,9 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
   deleteUser(uid: string): Promise<void> {
     return this.auth.deleteUser(uid);
   }
+  deleteUsers(uids: string[]): Promise<lib.admin.auth.DeleteUsersResult> {
+    return this.auth.deleteUsers(uids);
+  }
   getUser(uid: string): Promise<admin.auth.UserRecord> {
     return this.auth.getUser(uid);
   }
@@ -32,6 +36,9 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
   }
   getUserByPhoneNumber(phoneNumber: string): Promise<admin.auth.UserRecord> {
     return this.auth.getUserByPhoneNumber(phoneNumber);
+  }
+  getUsers(identifiers: admin.auth.UserRecord[]): Promise<lib.admin.auth.GetUsersResult> {
+    return this.auth.getUsers(identifiers);
   }
   listUsers(maxResults?: number, pageToken?: string): Promise<admin.auth.ListUsersResult> {
     return this.auth.listUsers(maxResults, pageToken);

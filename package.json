@@ -1,15 +1,17 @@
 {
   "name": "@aginix/nestjs-firebase-admin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Firebase Admin module for Nest framework",
-  "authors": [{
-    "name": "Nonpawit Teerachetmongkol",
-    "email": "nonpawit.tee@aginix.tech"
-  },
-  {
-    "name": "Michael Musso",
-    "email": "mmusso@smth.it"
-  }],
+  "authors": [
+    {
+      "name": "Nonpawit Teerachetmongkol",
+      "email": "nonpawit.tee@aginix.tech"
+    },
+    {
+      "name": "Michael Musso",
+      "email": "mmusso@smth.it"
+    }
+  ],
   "main": "./dist/index.js",
   "license": "MIT",
   "repository": {
