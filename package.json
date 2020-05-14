@@ -40,7 +40,7 @@
     "firebase-admin": "^8.11.0"
   },
   "devDependencies": {
-    "@types/jest": "25.2.1",
+    "@types/jest": "25.2.2",
     "@nestjs/testing": "7.0.9",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
