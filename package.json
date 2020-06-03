@@ -31,17 +31,17 @@
     "publish:next": "npm publish --access public --tag next"
   },
   "peerDependencies": {
-    "@nestjs/common": "^7.0.9",
-    "@nestjs/core": "^7.0.9"
+    "@nestjs/common": "^7.1.2",
+    "@nestjs/core": "^7.1.2"
   },
   "dependencies": {
-    "@nestjs/common": "^7.0.9",
-    "@nestjs/core": "^7.0.9",
-    "firebase-admin": "^8.11.0"
+    "firebase-admin": "^8.12.1"
   },
   "devDependencies": {
+    "@nestjs/common": "^7.1.2",
+    "@nestjs/core": "^7.1.2",
+    "@nestjs/testing": "7.1.2",
     "@types/jest": "25.2.1",
-    "@nestjs/testing": "7.0.9",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
     "husky": "4.2.5",
