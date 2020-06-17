@@ -19,7 +19,7 @@ export class FirebaseDatabaseService implements admin.database.Database {
     return this.database.goOnline();
   }
   ref(path?: string | admin.database.Reference): admin.database.Reference {
-    return this.database.ref();
+    return this.database.ref(path);
   }
   refFromURL(url: string): admin.database.Reference {
     return this.database.refFromURL(url);
