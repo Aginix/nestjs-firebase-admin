@@ -35,7 +35,8 @@
     "@nestjs/core": "^7.1.2"
   },
   "dependencies": {
-    "firebase-admin": "^8.12.1"
+    "@google-cloud/firestore": "^3.8.0",
+    "firebase-admin": "8.13.0"
   },
   "devDependencies": {
     "@nestjs/common": "^7.1.2",
