@@ -49,6 +49,13 @@ export class AppService {
 }
 ```
 
+## Compatibility Table
+
+| firebase-admin    | NestJS Library |
+| ----------------- |----------------|
+| `9.xx`            | `master`       |
+| `8.xx`            | `1.xx`         |
+
 ## License
 
 MIT © [Aginix Technologies Co., Ltd.](https://github.com/Aginix/nestjs-firebase-admin)
