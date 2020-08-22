@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import * as admin from 'firebase-admin';
-import * as remote from 'firebase-admin/lib/remote-config';
 
 @Injectable()
 export class FirebaseRemoteConfigService implements admin.remoteConfig.RemoteConfig {
@@ -42,9 +41,7 @@ export class FirebaseRemoteConfigService implements admin.remoteConfig.RemoteCon
     return this.remoteConfig.rollback(versionNumber);
   }
 
-  listVersions(
-    options?: remote.admin.remoteConfig.ListVersionsOptions,
-  ): Promise<admin.remoteConfig.ListVersionsResult> {
+  listVersions(options?: admin.remoteConfig.ListVersionsOptions): Promise<admin.remoteConfig.ListVersionsResult> {
     return this.remoteConfig.listVersions(options);
   }
 }
