@@ -24,7 +24,7 @@ export class FirebaseFirestoreService implements FirebaseFirestore.Firestore {
     return this.firestore.doc(documentPath);
   }
 
-  collectionGroup(collectionId: string): FirebaseFirestore.Query {
+  collectionGroup(collectionId: string): FirebaseFirestore.CollectionGroup {
     return this.firestore.collectionGroup(collectionId);
   }
 
