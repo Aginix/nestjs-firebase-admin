@@ -1,15 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import * as admin from 'firebase-admin';
+import { FirebaseApp } from '@firebase/app-types';
 
 @Injectable()
 export class FirebaseDatabaseService implements admin.database.Database {
-  constructor(public readonly app: admin.app.App) {}
+  app: FirebaseApp;
+  constructor(public readonly _app: admin.app.App) {}
 
   get database() {
-    if (!this.app) {
+    if (!this._app) {
       throw new Error('Firebase instance is undefined.');
     }
-    return this.app.database();
+    return this._app.database();
   }
 
   goOffline(): void {
@@ -32,5 +34,8 @@ export class FirebaseDatabaseService implements admin.database.Database {
   }
   setRules(source: string | object | Buffer): Promise<void> {
     return this.database.setRules(source);
+  }
+  useEmulator(host: string, port: number): void {
+    this.database.useEmulator(host, port);
   }
 }

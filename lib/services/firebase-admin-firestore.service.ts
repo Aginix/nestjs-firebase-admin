@@ -56,4 +56,8 @@ export class FirebaseFirestoreService implements FirebaseFirestore.Firestore {
   bulkWriter(options?: FirebaseFirestore.BulkWriterOptions): FirebaseFirestore.BulkWriter {
     return this.firestore.bulkWriter(options);
   }
+
+  bundle(bundleId?: string): FirebaseFirestore.BundleBuilder {
+    return this.firestore.bundle(bundleId);
+  }
 }
