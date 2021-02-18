@@ -36,6 +36,9 @@ export class FirebaseAuthenticationService implements admin.auth.Auth {
   getUserByPhoneNumber(phoneNumber: string): Promise<admin.auth.UserRecord> {
     return this.auth.getUserByPhoneNumber(phoneNumber);
   }
+  getUserByProviderUid(providerId: string, uid: string): Promise<admin.auth.UserRecord> {
+    return this.auth.getUserByProviderUid(providerId, uid);
+  }
   getUsers(identifiers: admin.auth.UserRecord[]): Promise<admin.auth.GetUsersResult> {
     return this.auth.getUsers(identifiers);
   }
