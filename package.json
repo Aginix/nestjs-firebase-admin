@@ -44,7 +44,7 @@
     "@types/jest": "^26.0.10",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
-    "husky": "4.3.0",
+    "husky": "5.1.0",
     "jest": "24.9.0",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1",
