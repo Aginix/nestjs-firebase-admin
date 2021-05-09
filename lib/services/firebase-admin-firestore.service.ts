@@ -60,4 +60,11 @@ export class FirebaseFirestoreService implements FirebaseFirestore.Firestore {
   bundle(bundleId?: string): FirebaseFirestore.BundleBuilder {
     return this.firestore.bundle(bundleId);
   }
+
+  recursiveDelete(
+    ref: FirebaseFirestore.CollectionReference<unknown> | FirebaseFirestore.DocumentReference<unknown>,
+    bulkWriter?: FirebaseFirestore.BulkWriter,
+  ): Promise<void> {
+    return this.firestore.recursiveDelete(ref, bulkWriter);
+  }
 }
