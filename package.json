@@ -32,29 +32,29 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@nestjs/common": "^7.1.2",
-    "@nestjs/core": "^7.1.2"
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1"
   },
   "dependencies": {
-    "firebase-admin": "^9.7.0"
+    "firebase-admin": "^10.0.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^7.6.15",
-    "@nestjs/core": "^7.4.2",
-    "@nestjs/testing": "^7.4.2",
-    "@types/jest": "^26.0.10",
-    "@types/node": "13.13.5",
-    "dotenv": "^8.1.0",
-    "husky": "4.3.0",
-    "jest": "24.9.0",
-    "lint-staged": "10.5.3",
-    "prettier": "2.2.1",
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/testing": "^8.1.1",
+    "@types/jest": "^27.0.2",
+    "@types/node": "16.11.2",
+    "dotenv": "^10.0.0",
+    "husky": "7.0.4",
+    "jest": "27.3.1",
+    "lint-staged": "11.2.3",
+    "prettier": "2.4.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
-    "supertest": "4.0.2",
-    "ts-jest": "^26.5.6",
+    "supertest": "6.1.6",
+    "ts-jest": "^27.0.7",
     "tslint": "^6.1.3",
-    "typescript": "3.9.7"
+    "typescript": "4.4.4"
   },
   "lint-staged": {
     "*.ts": [

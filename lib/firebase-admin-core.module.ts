@@ -4,20 +4,10 @@ import { FirebaseAdminModuleAsyncOptions, FirebaseAdminModuleOptions } from './f
 import { FIREBASE_ADMIN_MODULE_OPTIONS } from './firebase-admin.constant';
 import {
   FirebaseAuthenticationService,
-  FirebaseMessagingService,
-  FirebaseRemoteConfigService,
-  FirebaseDatabaseService,
-  FirebaseFirestoreService,
-  FirebaseStorageService,
 } from './services';
 
 const PROVIDERS = [
   FirebaseAuthenticationService,
-  FirebaseMessagingService,
-  FirebaseRemoteConfigService,
-  FirebaseDatabaseService,
-  FirebaseFirestoreService,
-  FirebaseStorageService,
 ];
 const EXPORTS = [...PROVIDERS];
 
