@@ -32,16 +32,16 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0"
+    "@nestjs/common": ">=8.0.0 < 10.0.0",
+    "@nestjs/core": ">=8.0.0 < 10.0.0"
   },
   "dependencies": {
     "firebase-admin": "^9.7.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0",
-    "@nestjs/testing": "^8.0.0",
+    "@nestjs/common": ">=8.0.0 < 10.0.0",
+    "@nestjs/core": ">=8.0.0 < 10.0.0",
+    "@nestjs/testing": ">=8.0.0 < 10.0.0",
     "@types/jest": "^26.0.10",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
