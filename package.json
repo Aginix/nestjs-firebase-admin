@@ -32,8 +32,8 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0"
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
   },
   "dependencies": {
     "firebase-admin": "^9.7.0"
