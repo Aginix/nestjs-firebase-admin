@@ -11,7 +11,7 @@ export class FirebaseDatabaseService implements admin.database.Database {
     if (!this._app) {
       throw new Error('Firebase instance is undefined.');
     }
-    return this._app.database();
+    return admin.database(this.app);
   }
 
   goOffline(): void {

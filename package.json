@@ -32,21 +32,21 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0"
+    "@nestjs/common": "^8.0.0 || ^9.4.3 || ^10.3.3",
+    "@nestjs/core": "^8.0.0 || ^9.4.3 || ^10.3.3"
   },
   "dependencies": {
-    "firebase-admin": "^9.7.0"
+    "firebase-admin": "^11.11.0"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.0",
-    "@nestjs/core": "^8.0.0",
-    "@nestjs/testing": "^8.0.0",
+    "@nestjs/common": "^10.3.3",
+    "@nestjs/core": "^10.3.3",
+    "@nestjs/testing": "^10.3.3",
     "@types/jest": "^26.0.10",
     "@types/node": "13.13.5",
     "dotenv": "^8.1.0",
     "husky": "4.3.0",
-    "jest": "24.9.0",
+    "jest": "^26.6.3",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1",
     "reflect-metadata": "^0.1.13",

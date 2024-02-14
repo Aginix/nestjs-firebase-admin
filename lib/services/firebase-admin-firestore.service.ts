@@ -9,7 +9,7 @@ export class FirebaseFirestoreService implements FirebaseFirestore.Firestore {
     if (!this.app) {
       throw new Error('Firebase instance is undefined.');
     }
-    return this.app.firestore();
+    return admin.firestore(this.app);
   }
 
   settings(settings: FirebaseFirestore.Settings): void {
